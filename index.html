@@ -482,7 +482,7 @@ function buildList() {
     row.className = "item-row" + (qtys[i] > 0 ? " active" : "");
     row.id = "row-" + i;
     row.innerHTML = `
-      <img class="item-img" src="${productImages[i]}" alt="${p.name}">
+     <img class="item-img" src="${productImages[i]}" alt="${p.name}" loading="lazy">
       <div>
         <div class="item-name">${p.name}</div>
         <div class="item-sub">${p.sub}</div>
